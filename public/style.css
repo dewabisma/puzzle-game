@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(images/qixi-bg.jpg) no-repeat;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 20px;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png)
+    no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+#heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-box {
+  display: none;
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+}
+
+.modal-content {
+  font-family: 'Ma Shan Zheng', cursive;
+  font-size: 30px;
+  text-shadow: 5px 5px 7px rgba(0, 0, 0, 1);
+  height: 200px;
+  margin: 20% auto;
+  text-align: center;
+  width: 70%;
+}
+
+#puzzle-wrapper {
+  margin: 0.8% auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+#surprise-button {
+  padding: 3px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
