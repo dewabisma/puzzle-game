@@ -9,10 +9,10 @@ const puzzleWrapper = document.querySelector('#puzzle-wrapper');
 const heartButton = document.querySelector('#heart');
 
 const puzzle1 = new PicturePuzzle(
-  document.querySelector('#puzzle-wrapper'),
+  puzzleWrapper,
   'images/QixiFestivalPuzzle.jpg',
   550,
-  5
+  3
 );
 
 puzzle1.onFinished = () => {
